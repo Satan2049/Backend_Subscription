@@ -77,13 +77,14 @@ pip install -r requirements.txt
 
 ### 4. Environment variables
 
-Create a ```text .env``` file in the project root and put this code in it:
+Create a `.env` file in the project root and put this code in it:
 
 ```bash
 DATABASE_URL=postgresql://postgres:password@localhost:5432/subscription_db
 ```
 
 ### 5. Run the server
+
 ```bash
 uvicorn app.main:app --reload
 ```
@@ -98,11 +99,13 @@ Swagger UI:
 http://127.0.0.1:8000/docs
 
 Health Check:
+
 ```http request
 GET /health
 ```
 
 ### 🧪 Example Response
+
 ```json
 {
   "status": "ok"
